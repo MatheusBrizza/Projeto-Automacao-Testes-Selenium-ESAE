@@ -37,7 +37,7 @@ public class LoginTest {
     @Test
     public void shouldOpenHomePage() {
         String currentUrl = driver.getCurrentUrl();
-        assertTrue(currentUrl.equals("https://ead.pge.rs.gov.br/"));
+        assertEquals("https://ead.pge.rs.gov.br/", currentUrl);
     }
     @Test
     public void shouldLoginWithCorrectCredentials() {
